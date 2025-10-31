@@ -1,0 +1,5 @@
+I used the PA3.pdf file to help with most of the algorithms.
+I used the following two pdfs provided to aid in BWT, LZSS, LZ78, and MTF.
+Compression II.pdf
+Compression III.pdf
+I used ChatGPT/Gemini to help with refining the algorithms when I was having my issues with the time processing and debugging issues when ensuring correctness.

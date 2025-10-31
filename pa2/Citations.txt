@@ -1,0 +1,8 @@
+Citations:
+PA2.pdf and P2PShortestPath.pdf provided for the algorithm implementations.
+Dijkstra code provided as a reference when implementing them for A*, A* Euclidean, A* Landmark Heuristic
+https://web.archive.org/web/20160322055823/http://ai.stanford.edu/~nilsson/OnlinePubs-Nils/PublishedPapers/astar.pdf
+http://ai.stanford.edu/~nilsson/OnlinePubs-Nils/PublishedPapers/astar.pdf
+https://www.cs.princeton.edu/courses/archive/spr06/cos423/Handouts/GH05.pdf
+https://www.cs.tau.ac.il/~haimk/papers/alenex06.pdf
+I used ChatGPT to help with troubleshooting errors and exceptions. I also used it to help with explaining parts of the algorithms and determining if certain parts of my code could be optimized better or if there was an issue with my implementation.

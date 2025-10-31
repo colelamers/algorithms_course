@@ -1,0 +1,5 @@
+I was having a major issue with the BWT decoded function until I found the following text. My issue I encountered was my function was O(n^2) and would only work up until H.pylori.fna. The decode essentially wouldn't end. So I found this link to help with the psuedo algorithm that aided in my implementation:
+
+Adjeroh, D., Bell, T., Mukherjee, A. (2008). The Burrows-Wheeler Transform: Data Compression, Suffix Arrays, and Pattern Matching. Netherlands: Springer US.
+
+https://www.google.com/books/edition/The_Burrows_Wheeler_Transform/ooWgKeQdYKMC?hl=en&gbpv=1&dq=burrows+wheeler+transform+decode&pg=PA1&printsec=frontcover

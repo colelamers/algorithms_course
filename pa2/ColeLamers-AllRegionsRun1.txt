@@ -1,0 +1,152 @@
+Loading NewYork...Done!
+
+Testing with 25 source-target pairs for NewYork
+
+P2P: Avg. Time = 66.16, Avg. no. of edges relaxed = 403637.96
+Bi-directional: Avg. Time = 50.36, Avg. no. of edges relaxed = 281969.92
+Euclidean: Avg. Time = 71.84, Avg. no. of edges relaxed = 152382.36
+
+Grid Landmark(4): Avg. Time = 10.36, Avg. no. of edges relaxed = 26169.16
+Random Landmark(4): Avg. Time = 11.84, Avg. no. of edges relaxed = 30014.8
+
+Grid Landmark(9): Avg. Time = 5.52, Avg. no. of edges relaxed = 14222.88
+Random Landmark(9): Avg. Time = 8.24, Avg. no. of edges relaxed = 20223.04
+
+Grid Landmark(16): Avg. Time = 4.2, Avg. no. of edges relaxed = 10531.4
+Random Landmark(16): Avg. Time = 5.92, Avg. no. of edges relaxed = 13536.6
+
+Grid Landmark(25): Avg. Time = 3.72, Avg. no. of edges relaxed = 8145.96
+Random Landmark(25): Avg. Time = 4.72, Avg. no. of edges relaxed = 10148.16
+
+Grid Landmark(36): Avg. Time = 3.96, Avg. no. of edges relaxed = 7120.6
+Random Landmark(36): Avg. Time = 4.56, Avg. no. of edges relaxed = 8314.56
+
+
+
+
+Loading Colorado...Done!
+
+Testing with 25 source-target pairs for Colorado
+
+P2P: Avg. Time = 71.0, Avg. no. of edges relaxed = 429270.16
+Bi-directional: Avg. Time = 64.32, Avg. no. of edges relaxed = 352009.52
+Euclidean: Avg. Time = 79.52, Avg. no. of edges relaxed = 175649.64
+
+Grid Landmark(4): Avg. Time = 10.76, Avg. no. of edges relaxed = 26550.96
+Random Landmark(4): Avg. Time = 11.52, Avg. no. of edges relaxed = 32041.64
+
+Grid Landmark(9): Avg. Time = 7.68, Avg. no. of edges relaxed = 20432.64
+Random Landmark(9): Avg. Time = 6.6, Avg. no. of edges relaxed = 15647.12
+
+Grid Landmark(16): Avg. Time = 8.56, Avg. no. of edges relaxed = 19739.36
+Random Landmark(16): Avg. Time = 6.76, Avg. no. of edges relaxed = 16946.88
+
+Grid Landmark(25): Avg. Time = 6.76, Avg. no. of edges relaxed = 14270.8
+Random Landmark(25): Avg. Time = 5.76, Avg. no. of edges relaxed = 11869.96
+
+Grid Landmark(36): Avg. Time = 6.12, Avg. no. of edges relaxed = 12563.52
+Random Landmark(36): Avg. Time = 5.88, Avg. no. of edges relaxed = 10141.88
+
+
+
+
+Loading NorthWest...Done!
+
+Testing with 25 source-target pairs for NorthWest
+
+P2P: Avg. Time = 308.2, Avg. no. of edges relaxed = 1514874.88
+Bi-directional: Avg. Time = 271.88, Avg. no. of edges relaxed = 1157616.4
+Euclidean: Avg. Time = 357.0, Avg. no. of edges relaxed = 644650.12
+
+Grid Landmark(4): Avg. Time = 137.36, Avg. no. of edges relaxed = 249626.4
+Random Landmark(4): Avg. Time = 75.12, Avg. no. of edges relaxed = 172221.8
+
+Grid Landmark(9): Avg. Time = 84.64, Avg. no. of edges relaxed = 164546.04
+Random Landmark(9): Avg. Time = 37.52, Avg. no. of edges relaxed = 88380.88
+
+Grid Landmark(16): Avg. Time = 83.92, Avg. no. of edges relaxed = 166610.28
+Random Landmark(16): Avg. Time = 41.04, Avg. no. of edges relaxed = 81767.2
+
+Grid Landmark(25): Avg. Time = 56.52, Avg. no. of edges relaxed = 111263.92
+Random Landmark(25): Avg. Time = 54.72, Avg. no. of edges relaxed = 89218.24
+
+Grid Landmark(36): Avg. Time = 52.16, Avg. no. of edges relaxed = 99055.52
+Random Landmark(36): Avg. Time = 42.04, Avg. no. of edges relaxed = 62934.56
+
+
+
+
+Loading California...Done!
+
+Testing with 25 source-target pairs for California
+
+P2P: Avg. Time = 573.44, Avg. no. of edges relaxed = 2676285.84
+Bi-directional: Avg. Time = 552.88, Avg. no. of edges relaxed = 2160915.08
+Euclidean: Avg. Time = 681.0, Avg. no. of edges relaxed = 1125288.04
+
+Grid Landmark(4): Avg. Time = 308.84, Avg. no. of edges relaxed = 575318.56
+Random Landmark(4): Avg. Time = 137.4, Avg. no. of edges relaxed = 286614.08
+
+Grid Landmark(9): Avg. Time = 151.24, Avg. no. of edges relaxed = 284358.8
+Random Landmark(9): Avg. Time = 74.48, Avg. no. of edges relaxed = 156266.72
+
+Grid Landmark(16): Avg. Time = 95.2, Avg. no. of edges relaxed = 163514.92
+Random Landmark(16): Avg. Time = 53.72, Avg. no. of edges relaxed = 100374.64
+
+Grid Landmark(25): Avg. Time = 82.72, Avg. no. of edges relaxed = 141158.44
+Random Landmark(25): Avg. Time = 68.52, Avg. no. of edges relaxed = 103958.12
+
+Grid Landmark(36): Avg. Time = 66.4, Avg. no. of edges relaxed = 110602.6
+Random Landmark(36): Avg. Time = 43.24, Avg. no. of edges relaxed = 61038.92
+
+
+
+
+Loading East...Done!
+
+Testing with 25 source-target pairs for East
+
+P2P: Avg. Time = 938.92, Avg. no. of edges relaxed = 3930021.32
+Bi-directional: Avg. Time = 875.88, Avg. no. of edges relaxed = 3065372.72
+Euclidean: Avg. Time = 1092.52, Avg. no. of edges relaxed = 1604365.36
+
+Grid Landmark(4): Avg. Time = 94.88, Avg. no. of edges relaxed = 177587.2
+Random Landmark(4): Avg. Time = 185.88, Avg. no. of edges relaxed = 304344.92
+
+Grid Landmark(9): Avg. Time = 68.04, Avg. no. of edges relaxed = 127407.16
+Random Landmark(9): Avg. Time = 116.24, Avg. no. of edges relaxed = 209824.6
+
+Grid Landmark(16): Avg. Time = 44.12, Avg. no. of edges relaxed = 76963.84
+Random Landmark(16): Avg. Time = 129.8, Avg. no. of edges relaxed = 197780.0
+
+Grid Landmark(25): Avg. Time = 45.88, Avg. no. of edges relaxed = 70066.92
+Random Landmark(25): Avg. Time = 85.96, Avg. no. of edges relaxed = 124552.96
+
+Grid Landmark(36): Avg. Time = 54.32, Avg. no. of edges relaxed = 67465.56
+Random Landmark(36): Avg. Time = 56.0, Avg. no. of edges relaxed = 61845.64
+
+
+
+
+Loading West...Done!
+
+Testing with 25 source-target pairs for West
+
+P2P: Avg. Time = 1852.56, Avg. no. of edges relaxed = 7536869.28
+Bi-directional: Avg. Time = 1725.32, Avg. no. of edges relaxed = 5971667.44
+Euclidean: Avg. Time = 2176.56, Avg. no. of edges relaxed = 3146940.36
+
+Grid Landmark(4): Avg. Time = 377.2, Avg. no. of edges relaxed = 613283.2
+Random Landmark(4): Avg. Time = 340.88, Avg. no. of edges relaxed = 677102.44
+
+Grid Landmark(9): Avg. Time = 234.04, Avg. no. of edges relaxed = 405565.84
+Random Landmark(9): Avg. Time = 193.2, Avg. no. of edges relaxed = 354384.24
+
+Grid Landmark(16): Avg. Time = 165.64, Avg. no. of edges relaxed = 295118.4
+Random Landmark(16): Avg. Time = 157.32, Avg. no. of edges relaxed = 269071.08
+
+Grid Landmark(25): Avg. Time = 125.8, Avg. no. of edges relaxed = 194227.72
+Random Landmark(25): Avg. Time = 142.36, Avg. no. of edges relaxed = 205181.52
+
+Grid Landmark(36): Avg. Time = 92.52, Avg. no. of edges relaxed = 117873.12
+Random Landmark(36): Avg. Time = 142.16, Avg. no. of edges relaxed = 172952.52

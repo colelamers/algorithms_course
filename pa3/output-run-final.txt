@@ -1,0 +1,1062 @@
+/home/crassus/.jdks/openjdk-23.0.2/bin/java -javaagent:/home/crassus/.local/share/JetBrains/Toolbox/apps/intellij-idea-community-edition/lib/idea_rt.jar=34719:/home/crassus/.local/share/JetBrains/Toolbox/apps/intellij-idea-community-edition/bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath /home/crassus/Documents/School/CS738 - Algorithms in Real World/PA3/cs738p3/out/production/cs738p3 Test -Xmx2g
+*** Huffman Test ***
+Original string: Y2XEYX2XYX2CEXEX2Y2ZYX2ZYZE2Y2ZEYXEX2YZYCY2ZEX
+Mapping:  {50=01, 67=1110, 69=110, 88=00, 89=10, 90=1111}
+Encoding: 1001001101000010010000111101100011000011001111110000111111011111100110011111110100011000011011111011101001111111000
+Decoded string:  Y2XEYX2XYX2CEXEX2Y2ZYX2ZYZE2Y2ZEYXEX2YZYCY2ZEX
+
+*** Test Huffman IO ***
+String:         Y2XEYX2XYX2CEXEX2Y2ZYX2ZYZE2Y2ZEYXEX2YZYCY2ZEX
+Decoded String: Y2XEYX2XYX2CEXEX2Y2ZYX2ZYZE2Y2ZEYXEX2YZYCY2ZEX
+
+*** Manber Myers Test ***
+Suffix Array for banana: [5, 3, 1, 0, 4, 2]
+Suffix Array for mississippi: [10, 7, 4, 1, 0, 9, 8, 6, 3, 5, 2]
+Suffix Array for mississippilesslyormississippily: [12, 10, 29, 7, 26, 4, 23, 1, 20, 11, 30, 15, 0, 19, 17, 9, 28, 8, 27, 18, 6, 25, 3, 22, 14, 5, 24, 2, 21, 13, 31, 16]
+
+*** Brute-Force Suffix Array Test ***
+Suffix Array for banana: [5, 3, 1, 0, 4, 2]
+Suffix Array for mississippi: [10, 7, 4, 1, 0, 9, 8, 6, 3, 5, 2]
+Suffix Array for mississippilesslyormississippily: [12, 10, 29, 7, 26, 4, 23, 1, 20, 11, 30, 15, 0, 19, 17, 9, 28, 8, 27, 18, 6, 25, 3, 22, 14, 5, 24, 2, 21, 13, 31, 16]
+
+*** Packing/Unpacking Test ***
+Binary String: 0111001100001001111101110100
+Packed Bytes:  [115, 9, -9, 4, 4]
+Unpacked Bits: 0111001100001001111101110100
+
+Binary String: 01110011000010011111001001
+Packed Bytes:  [115, 9, -14, 1, 2]
+Unpacked Bits: 01110011000010011111001001
+
+Binary String: 10110011011010011101011101001101
+Packed Bytes:  [-77, 105, -41, 77, 8]
+Unpacked Bits: 10110011011010011101011101001101
+
+*** Test LZ77 ***
+Original String:  mississippimissississispsisp
+Encoding: <0,0,m> <0,0,i> <0,0,s> <1,1,i> <3,3,p> <1,1,i> <11,8,s> <3,3,p> <4,4, >
+Decoded String:   mississippimissississispsisp
+
+*** Test LZSS ***
+Original String:  mississippimissississispsisp
+Encoding: <m> <i> <s> <s> <i> <s> <s> <i> <p> <p> <i> <11,8,s> <s> <i> <s> <p> <s> <i> <s> <p> < >
+Decoded String:   mississippimissississispsisp
+
+*** BWT Test ***
+String:  banana
+BWT:     [a, n, n, b,  , a, a]
+Decoded: banana
+
+String:  mississippi
+BWT:     [i, p, s, s, m,  , p, i, s, s, i, i]
+Decoded: mississippi
+
+String:  mississippilesslyormississippily
+BWT:     [y, l, p, p, s, s, s, s, m, m, i, i, s,  , r, y, p, p, i, i, o, s, s, s, s, s, i, i, i, i, e, l, l]
+Decoded: mississippilesslyormississippily
+
+String:  TAT
+BWT:     [T, T, A,  ]
+Decoded: TAT
+
+*** MTF Test ***
+Original: spsssmmipissssiiii
+MTF: [3, 3, 1, 0, 0, 3, 0, 3, 3, 1, 3, 0, 0, 0, 1, 0, 0, 0]
+Decoded:  spsssmmipissssiiii
+
+*** Test LZ78 ***
+Original String:  mississippimissississispsisp
+Encoded Node Ids: 000000110110100000010001001001010100110100000
+Next character:   [m, i, s, i, s, p, p, m, s, s, s, p, p,  ]
+Decoded String:   mississippimissississispsisp
+
+
+**********************
+
+Reading file: Data/tiny.txt
+File loaded.
+Data -> LZ77 Phase...
+LZ77 -> Huffman Phase...
+Writing compressed files...
+
+Compression took 0.01 seconds
+
+Original File Size = 105 bytes
+Compressed File Size = 288 bytes
+Compression Ratio = 0.36
+
+**********************
+
+Reading file: Data/medium.txt
+File loaded.
+Data -> LZ77 Phase...
+LZ77 -> Huffman Phase...
+Writing compressed files...
+
+Compression took 0.02 seconds
+
+Original File Size = 662 bytes
+Compressed File Size = 1026 bytes
+Compression Ratio = 0.65
+
+**********************
+
+Reading file: Data/aliceinwonderland.txt
+File loaded.
+Data -> LZ77 Phase...
+LZ77 -> Huffman Phase...
+Writing compressed files...
+
+Compression took 0.54 seconds
+
+Original File Size = 148481 bytes
+Compressed File Size = 92827 bytes
+Compression Ratio = 1.60
+
+**********************
+
+Reading file: Data/H.pylori.fna
+File loaded.
+Data -> LZ77 Phase...
+LZ77 -> Huffman Phase...
+Writing compressed files...
+
+Compression took 4.36 seconds
+
+Original File Size = 1688782 bytes
+Compressed File Size = 517874 bytes
+Compression Ratio = 3.26
+
+**********************
+
+Reading file: Data/L.monocytogenes.fna
+File loaded.
+Data -> LZ77 Phase...
+LZ77 -> Huffman Phase...
+Writing compressed files...
+
+Compression took 9.87 seconds
+
+Original File Size = 2981404 bytes
+Compressed File Size = 914643 bytes
+Compression Ratio = 3.26
+
+**********************
+
+Reading file: Data/bible.txt
+File loaded.
+Data -> LZ77 Phase...
+LZ77 -> Huffman Phase...
+Writing compressed files...
+
+Compression took 10.10 seconds
+
+Original File Size = 4047389 bytes
+Compressed File Size = 1775572 bytes
+Compression Ratio = 2.28
+
+**********************
+
+Reading file: Data/E.Coli.fna
+File loaded.
+Data -> LZ77 Phase...
+LZ77 -> Huffman Phase...
+Writing compressed files...
+
+Compression took 15.01 seconds
+
+Original File Size = 5664774 bytes
+Compressed File Size = 1743149 bytes
+Compression Ratio = 3.25
+
+**********************
+
+Reading file: Data/S.cerevisiae.fna
+File loaded.
+Data -> LZ77 Phase...
+LZ77 -> Huffman Phase...
+Writing compressed files...
+
+Compression took 30.13 seconds
+
+Original File Size = 12310391 bytes
+Compressed File Size = 4147500 bytes
+Compression Ratio = 2.97
+
+**********************
+
+Reading file: Data/N.crassa.fna
+File loaded.
+Data -> LZ77 Phase...
+LZ77 -> Huffman Phase...
+Writing compressed files...
+
+Compression took 101.00 seconds
+
+Original File Size = 41618284 bytes
+Compressed File Size = 13928475 bytes
+Compression Ratio = 2.99
+
+**********************
+
+Reading file: Data/C.elegans.fna
+File loaded.
+Data -> LZ77 Phase...
+LZ77 -> Huffman Phase...
+Writing compressed files...
+
+Compression took 213.44 seconds
+
+Original File Size = 101540351 bytes
+Compressed File Size = 34730832 bytes
+Compression Ratio = 2.92
+
+**********************
+
+Reading data for verification: Data/tiny.txt
+File loaded.
+Reading compressed files...
+Huffman -> LZ77 Phase...
+LZ77 -> Decoded Data Phase...
+
+Decompression took 0.00 seconds
+
+**********************
+
+Reading data for verification: Data/medium.txt
+File loaded.
+Reading compressed files...
+Huffman -> LZ77 Phase...
+LZ77 -> Decoded Data Phase...
+
+Decompression took 0.01 seconds
+
+**********************
+
+Reading data for verification: Data/aliceinwonderland.txt
+File loaded.
+Reading compressed files...
+Huffman -> LZ77 Phase...
+LZ77 -> Decoded Data Phase...
+
+Decompression took 0.22 seconds
+
+**********************
+
+Reading data for verification: Data/H.pylori.fna
+File loaded.
+Reading compressed files...
+Huffman -> LZ77 Phase...
+LZ77 -> Decoded Data Phase...
+
+Decompression took 0.61 seconds
+
+**********************
+
+Reading data for verification: Data/L.monocytogenes.fna
+File loaded.
+Reading compressed files...
+Huffman -> LZ77 Phase...
+LZ77 -> Decoded Data Phase...
+
+Decompression took 1.03 seconds
+
+**********************
+
+Reading data for verification: Data/bible.txt
+File loaded.
+Reading compressed files...
+Huffman -> LZ77 Phase...
+LZ77 -> Decoded Data Phase...
+
+Decompression took 2.00 seconds
+
+**********************
+
+Reading data for verification: Data/E.Coli.fna
+File loaded.
+Reading compressed files...
+Huffman -> LZ77 Phase...
+LZ77 -> Decoded Data Phase...
+
+Decompression took 2.33 seconds
+
+**********************
+
+Reading data for verification: Data/S.cerevisiae.fna
+File loaded.
+Reading compressed files...
+Huffman -> LZ77 Phase...
+LZ77 -> Decoded Data Phase...
+
+Decompression took 6.02 seconds
+
+**********************
+
+Reading data for verification: Data/N.crassa.fna
+File loaded.
+Reading compressed files...
+Huffman -> LZ77 Phase...
+LZ77 -> Decoded Data Phase...
+
+Decompression took 20.78 seconds
+
+**********************
+
+Reading data for verification: Data/C.elegans.fna
+File loaded.
+Reading compressed files...
+Huffman -> LZ77 Phase...
+LZ77 -> Decoded Data Phase...
+
+Decompression took 44.63 seconds
+**********************
+
+
+**********************
+
+Reading file: Data/tiny.txt
+File loaded.
+Data -> LZSS Phase...
+LZSS -> Huffman Phase...
+Writing compressed files...
+
+Compression took 0.00 seconds
+
+Original File Size = 105 bytes
+Compressed File Size = 101 bytes
+Compression Ratio = 1.04
+
+**********************
+
+Reading file: Data/medium.txt
+File loaded.
+Data -> LZSS Phase...
+LZSS -> Huffman Phase...
+Writing compressed files...
+
+Compression took 0.01 seconds
+
+Original File Size = 662 bytes
+Compressed File Size = 484 bytes
+Compression Ratio = 1.37
+
+**********************
+
+Reading file: Data/aliceinwonderland.txt
+File loaded.
+Data -> LZSS Phase...
+LZSS -> Huffman Phase...
+Writing compressed files...
+
+Compression took 0.77 seconds
+
+Original File Size = 148481 bytes
+Compressed File Size = 98466 bytes
+Compression Ratio = 1.51
+
+**********************
+
+Reading file: Data/H.pylori.fna
+File loaded.
+Data -> LZSS Phase...
+LZSS -> Huffman Phase...
+Writing compressed files...
+
+Compression took 5.39 seconds
+
+Original File Size = 1688782 bytes
+Compressed File Size = 538678 bytes
+Compression Ratio = 3.14
+
+**********************
+
+Reading file: Data/L.monocytogenes.fna
+File loaded.
+Data -> LZSS Phase...
+LZSS -> Huffman Phase...
+Writing compressed files...
+
+Compression took 10.89 seconds
+
+Original File Size = 2981404 bytes
+Compressed File Size = 953927 bytes
+Compression Ratio = 3.13
+
+**********************
+
+Reading file: Data/bible.txt
+File loaded.
+Data -> LZSS Phase...
+LZSS -> Huffman Phase...
+Writing compressed files...
+
+Compression took 13.40 seconds
+
+Original File Size = 4047389 bytes
+Compressed File Size = 1897765 bytes
+Compression Ratio = 2.13
+
+**********************
+
+Reading file: Data/E.Coli.fna
+File loaded.
+Data -> LZSS Phase...
+LZSS -> Huffman Phase...
+Writing compressed files...
+
+Compression took 19.74 seconds
+
+Original File Size = 5664774 bytes
+Compressed File Size = 1828829 bytes
+Compression Ratio = 3.10
+
+**********************
+
+Reading file: Data/S.cerevisiae.fna
+File loaded.
+Data -> LZSS Phase...
+LZSS -> Huffman Phase...
+Writing compressed files...
+
+Compression took 41.31 seconds
+
+Original File Size = 12310391 bytes
+Compressed File Size = 4443305 bytes
+Compression Ratio = 2.77
+
+**********************
+
+Reading file: Data/N.crassa.fna
+File loaded.
+Data -> LZSS Phase...
+LZSS -> Huffman Phase...
+Writing compressed files...
+
+Compression took 139.98 seconds
+
+Original File Size = 41618284 bytes
+Compressed File Size = 14884510 bytes
+Compression Ratio = 2.80
+
+**********************
+
+Reading file: Data/C.elegans.fna
+File loaded.
+Data -> LZSS Phase...
+LZSS -> Huffman Phase...
+Writing compressed files...
+
+Compression took 301.26 seconds
+
+Original File Size = 101540351 bytes
+Compressed File Size = 37845596 bytes
+Compression Ratio = 2.68
+
+**********************
+
+Reading file for verification: Data/tiny.txt
+File loaded.
+Reading compressed files...
+Huffman -> LZSS Phase...
+LZSS -> Decoded Data Phase...
+
+Decompression took 0.00 seconds
+
+**********************
+
+Reading file for verification: Data/medium.txt
+File loaded.
+Reading compressed files...
+Huffman -> LZSS Phase...
+LZSS -> Decoded Data Phase...
+
+Decompression took 0.00 seconds
+
+**********************
+
+Reading file for verification: Data/aliceinwonderland.txt
+File loaded.
+Reading compressed files...
+Huffman -> LZSS Phase...
+LZSS -> Decoded Data Phase...
+
+Decompression took 0.09 seconds
+
+**********************
+
+Reading file for verification: Data/H.pylori.fna
+File loaded.
+Reading compressed files...
+Huffman -> LZSS Phase...
+LZSS -> Decoded Data Phase...
+
+Decompression took 0.60 seconds
+
+**********************
+
+Reading file for verification: Data/L.monocytogenes.fna
+File loaded.
+Reading compressed files...
+Huffman -> LZSS Phase...
+LZSS -> Decoded Data Phase...
+
+Decompression took 1.22 seconds
+
+**********************
+
+Reading file for verification: Data/bible.txt
+File loaded.
+Reading compressed files...
+Huffman -> LZSS Phase...
+LZSS -> Decoded Data Phase...
+
+Decompression took 2.07 seconds
+
+**********************
+
+Reading file for verification: Data/E.Coli.fna
+File loaded.
+Reading compressed files...
+Huffman -> LZSS Phase...
+LZSS -> Decoded Data Phase...
+
+Decompression took 2.56 seconds
+
+**********************
+
+Reading file for verification: Data/S.cerevisiae.fna
+File loaded.
+Reading compressed files...
+Huffman -> LZSS Phase...
+LZSS -> Decoded Data Phase...
+
+Decompression took 6.81 seconds
+
+**********************
+
+Reading file for verification: Data/N.crassa.fna
+File loaded.
+Reading compressed files...
+Huffman -> LZSS Phase...
+LZSS -> Decoded Data Phase...
+
+Decompression took 22.30 seconds
+
+**********************
+
+Reading file for verification: Data/C.elegans.fna
+File loaded.
+Reading compressed files...
+Huffman -> LZSS Phase...
+LZSS -> Decoded Data Phase...
+
+Decompression took 50.74 seconds
+**********************
+
+
+**********************
+
+Reading file: Data/tiny.txt
+File loaded.
+Data -> BWT Phase...
+BWT -> MTF Phase...
+MTF -> Huffman Phase...
+Writing compressed files...
+
+Compression took 0.01 seconds
+
+Original File Size = 105 bytes
+Compressed File Size = 69 bytes
+Compression Ratio = 1.52
+
+**********************
+
+Reading file: Data/medium.txt
+File loaded.
+Data -> BWT Phase...
+BWT -> MTF Phase...
+MTF -> Huffman Phase...
+Writing compressed files...
+
+Compression took 0.01 seconds
+
+Original File Size = 662 bytes
+Compressed File Size = 203 bytes
+Compression Ratio = 3.26
+
+**********************
+
+Reading file: Data/aliceinwonderland.txt
+File loaded.
+Data -> BWT Phase...
+BWT -> MTF Phase...
+MTF -> Huffman Phase...
+Writing compressed files...
+
+Compression took 0.35 seconds
+
+Original File Size = 148481 bytes
+Compressed File Size = 50066 bytes
+Compression Ratio = 2.97
+
+**********************
+
+Reading file: Data/H.pylori.fna
+File loaded.
+Data -> BWT Phase...
+BWT -> MTF Phase...
+MTF -> Huffman Phase...
+Writing compressed files...
+
+Compression took 4.32 seconds
+
+Original File Size = 1688782 bytes
+Compressed File Size = 470642 bytes
+Compression Ratio = 3.59
+
+**********************
+
+Reading file: Data/L.monocytogenes.fna
+File loaded.
+Data -> BWT Phase...
+BWT -> MTF Phase...
+MTF -> Huffman Phase...
+Writing compressed files...
+
+Compression took 7.99 seconds
+
+Original File Size = 2981404 bytes
+Compressed File Size = 842780 bytes
+Compression Ratio = 3.54
+
+**********************
+
+Reading file: Data/bible.txt
+File loaded.
+Data -> BWT Phase...
+BWT -> MTF Phase...
+MTF -> Huffman Phase...
+Writing compressed files...
+
+Compression took 11.48 seconds
+
+Original File Size = 4047389 bytes
+Compressed File Size = 1055459 bytes
+Compression Ratio = 3.83
+
+**********************
+
+Reading file: Data/E.Coli.fna
+File loaded.
+Data -> BWT Phase...
+BWT -> MTF Phase...
+MTF -> Huffman Phase...
+Writing compressed files...
+
+Compression took 17.12 seconds
+
+Original File Size = 5664774 bytes
+Compressed File Size = 1603040 bytes
+Compression Ratio = 3.53
+
+**********************
+
+Reading file: Data/S.cerevisiae.fna
+File loaded.
+Data -> BWT Phase...
+BWT -> MTF Phase...
+MTF -> Huffman Phase...
+Writing compressed files...
+
+Compression took 40.91 seconds
+
+Original File Size = 12310391 bytes
+Compressed File Size = 3569039 bytes
+Compression Ratio = 3.45
+
+**********************
+
+Reading file: Data/N.crassa.fna
+File loaded.
+Data -> BWT Phase...
+BWT -> MTF Phase...
+MTF -> Huffman Phase...
+Writing compressed files...
+
+Compression took 159.93 seconds
+
+Original File Size = 41618284 bytes
+Compressed File Size = 12072002 bytes
+Compression Ratio = 3.45
+
+**********************
+
+Reading file: Data/C.elegans.fna
+File loaded.
+Data -> BWT Phase...
+BWT -> MTF Phase...
+MTF -> Huffman Phase...
+Writing compressed files...
+
+Compression took 420.91 seconds
+
+Original File Size = 101540351 bytes
+Compressed File Size = 29578036 bytes
+Compression Ratio = 3.43
+
+**********************
+
+Reading file for verification: Data/tiny.txt
+File loaded.
+Reading compressed files...
+Huffman -> MTF Phase...
+MTF -> BWT Phase...
+BWT -> Decoded Data Phase...
+
+Decompression took 0.00 seconds
+
+**********************
+
+Reading file for verification: Data/medium.txt
+File loaded.
+Reading compressed files...
+Huffman -> MTF Phase...
+MTF -> BWT Phase...
+BWT -> Decoded Data Phase...
+
+Decompression took 0.00 seconds
+
+**********************
+
+Reading file for verification: Data/aliceinwonderland.txt
+File loaded.
+Reading compressed files...
+Huffman -> MTF Phase...
+MTF -> BWT Phase...
+BWT -> Decoded Data Phase...
+
+Decompression took 0.16 seconds
+
+**********************
+
+Reading file for verification: Data/H.pylori.fna
+File loaded.
+Reading compressed files...
+Huffman -> MTF Phase...
+MTF -> BWT Phase...
+BWT -> Decoded Data Phase...
+
+Decompression took 1.22 seconds
+
+**********************
+
+Reading file for verification: Data/L.monocytogenes.fna
+File loaded.
+Reading compressed files...
+Huffman -> MTF Phase...
+MTF -> BWT Phase...
+BWT -> Decoded Data Phase...
+
+Decompression took 2.11 seconds
+
+**********************
+
+Reading file for verification: Data/bible.txt
+File loaded.
+Reading compressed files...
+Huffman -> MTF Phase...
+MTF -> BWT Phase...
+BWT -> Decoded Data Phase...
+
+Decompression took 3.10 seconds
+
+**********************
+
+Reading file for verification: Data/E.Coli.fna
+File loaded.
+Reading compressed files...
+Huffman -> MTF Phase...
+MTF -> BWT Phase...
+BWT -> Decoded Data Phase...
+
+Decompression took 4.95 seconds
+
+**********************
+
+Reading file for verification: Data/S.cerevisiae.fna
+File loaded.
+Reading compressed files...
+Huffman -> MTF Phase...
+MTF -> BWT Phase...
+BWT -> Decoded Data Phase...
+
+Decompression took 12.41 seconds
+
+**********************
+
+Reading file for verification: Data/N.crassa.fna
+File loaded.
+Reading compressed files...
+Huffman -> MTF Phase...
+MTF -> BWT Phase...
+BWT -> Decoded Data Phase...
+
+Decompression took 35.80 seconds
+
+**********************
+
+Reading file for verification: Data/C.elegans.fna
+File loaded.
+Reading compressed files...
+Huffman -> MTF Phase...
+MTF -> BWT Phase...
+BWT -> Decoded Data Phase...
+
+Decompression took 87.99 seconds
+**********************
+
+
+**********************
+
+Reading file: Data/tiny.txt
+File loaded.
+Data -> LZ78 Phase...
+LZ78 -> Huffman Phase...
+Writing compressed files...
+
+Compression took 0.00 seconds
+
+Original File Size = 105 bytes
+Compressed File Size = 66 bytes
+Compression Ratio = 1.59
+
+**********************
+
+Reading file: Data/medium.txt
+File loaded.
+Data -> LZ78 Phase...
+LZ78 -> Huffman Phase...
+Writing compressed files...
+
+Compression took 0.01 seconds
+
+Original File Size = 662 bytes
+Compressed File Size = 222 bytes
+Compression Ratio = 2.98
+
+**********************
+
+Reading file: Data/aliceinwonderland.txt
+File loaded.
+Data -> LZ78 Phase...
+LZ78 -> Huffman Phase...
+Writing compressed files...
+
+Compression took 0.16 seconds
+
+Original File Size = 148481 bytes
+Compressed File Size = 68676 bytes
+Compression Ratio = 2.16
+
+**********************
+
+Reading file: Data/H.pylori.fna
+File loaded.
+Data -> LZ78 Phase...
+LZ78 -> Huffman Phase...
+Writing compressed files...
+
+Compression took 0.61 seconds
+
+Original File Size = 1688782 bytes
+Compressed File Size = 455106 bytes
+Compression Ratio = 3.71
+
+**********************
+
+Reading file: Data/L.monocytogenes.fna
+File loaded.
+Data -> LZ78 Phase...
+LZ78 -> Huffman Phase...
+Writing compressed files...
+
+Compression took 1.29 seconds
+
+Original File Size = 2981404 bytes
+Compressed File Size = 817317 bytes
+Compression Ratio = 3.65
+
+**********************
+
+Reading file: Data/bible.txt
+File loaded.
+Data -> LZ78 Phase...
+LZ78 -> Huffman Phase...
+Writing compressed files...
+
+Compression took 1.52 seconds
+
+Original File Size = 4047389 bytes
+Compressed File Size = 1395669 bytes
+Compression Ratio = 2.90
+
+**********************
+
+Reading file: Data/E.Coli.fna
+File loaded.
+Data -> LZ78 Phase...
+LZ78 -> Huffman Phase...
+Writing compressed files...
+
+Compression took 2.10 seconds
+
+Original File Size = 5664774 bytes
+Compressed File Size = 1566821 bytes
+Compression Ratio = 3.62
+
+**********************
+
+Reading file: Data/S.cerevisiae.fna
+File loaded.
+Data -> LZ78 Phase...
+LZ78 -> Huffman Phase...
+Writing compressed files...
+
+Compression took 4.59 seconds
+
+Original File Size = 12310391 bytes
+Compressed File Size = 3595075 bytes
+Compression Ratio = 3.42
+
+**********************
+
+Reading file: Data/N.crassa.fna
+File loaded.
+Data -> LZ78 Phase...
+LZ78 -> Huffman Phase...
+Writing compressed files...
+
+Compression took 16.48 seconds
+
+Original File Size = 41618284 bytes
+Compressed File Size = 12149082 bytes
+Compression Ratio = 3.43
+
+**********************
+
+Reading file: Data/C.elegans.fna
+File loaded.
+Data -> LZ78 Phase...
+LZ78 -> Huffman Phase...
+Writing compressed files...
+
+Compression took 38.37 seconds
+
+Original File Size = 101540351 bytes
+Compressed File Size = 29379867 bytes
+Compression Ratio = 3.46
+
+**********************
+
+Reading file for verification: Data/tiny.txt
+File loaded.
+Reading compressed files...
+Huffman -> LZ78 Phase...
+LZ78 -> Decoded Data Phase...
+
+Decompression took 0.00 seconds
+
+**********************
+
+Reading file for verification: Data/medium.txt
+File loaded.
+Reading compressed files...
+Huffman -> LZ78 Phase...
+LZ78 -> Decoded Data Phase...
+
+Decompression took 0.00 seconds
+
+**********************
+
+Reading file for verification: Data/aliceinwonderland.txt
+File loaded.
+Reading compressed files...
+Huffman -> LZ78 Phase...
+LZ78 -> Decoded Data Phase...
+
+Decompression took 0.11 seconds
+
+**********************
+
+Reading file for verification: Data/H.pylori.fna
+File loaded.
+Reading compressed files...
+Huffman -> LZ78 Phase...
+LZ78 -> Decoded Data Phase...
+
+Decompression took 0.43 seconds
+
+**********************
+
+Reading file for verification: Data/L.monocytogenes.fna
+File loaded.
+Reading compressed files...
+Huffman -> LZ78 Phase...
+LZ78 -> Decoded Data Phase...
+
+Decompression took 0.88 seconds
+
+**********************
+
+Reading file for verification: Data/bible.txt
+File loaded.
+Reading compressed files...
+Huffman -> LZ78 Phase...
+LZ78 -> Decoded Data Phase...
+
+Decompression took 1.77 seconds
+
+**********************
+
+Reading file for verification: Data/E.Coli.fna
+File loaded.
+Reading compressed files...
+Huffman -> LZ78 Phase...
+LZ78 -> Decoded Data Phase...
+
+Decompression took 2.21 seconds
+
+**********************
+
+Reading file for verification: Data/S.cerevisiae.fna
+File loaded.
+Reading compressed files...
+Huffman -> LZ78 Phase...
+LZ78 -> Decoded Data Phase...
+
+Decompression took 3.56 seconds
+
+**********************
+
+Reading file for verification: Data/N.crassa.fna
+File loaded.
+Reading compressed files...
+Huffman -> LZ78 Phase...
+LZ78 -> Decoded Data Phase...
+
+Decompression took 13.87 seconds
+
+**********************
+
+Reading file for verification: Data/C.elegans.fna
+File loaded.
+Reading compressed files...
+Huffman -> LZ78 Phase...
+LZ78 -> Decoded Data Phase...
+
+Decompression took 31.43 seconds
+**********************
+
+Process finished with exit code 0
+
